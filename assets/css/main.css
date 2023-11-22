@@ -1853,6 +1853,10 @@ input, select, textarea {
 	overflow: hidden;
 	padding: 30px;
 }
+#largeslider{
+	overflow: hidden;
+	padding: 30px;
+}
 
 #slider figure {
 	position: relative;
@@ -1868,16 +1872,22 @@ input, select, textarea {
 	left: 0;
 	animation: 10s shortslider infinite;
 }
+#largeslider figure {
+	position: relative;
+	width: 500%;
+	margin: 0;
+	left: 0;
+	animation: 10s largeslider infinite;
+}
 
 #slider figure img {
-
 	width: 20%
-	
 }
 #shortslider figure img {
-
 	width: 20%
-	
+}
+#largeslider figure img {
+	width: 20%
 }
 
 @keyframes slider {
@@ -1914,6 +1924,33 @@ input, select, textarea {
 	45% {
 		left: -100%;
 	}
+}
+@keyframes largeslider {
+	0% {
+		left:0;
+	}
+	20% {
+		left:0;
+	}
+	25% {
+		left: -100%;
+	}
+	45% {
+		left: -100%;
+	}
+	50% {
+		left: -200%;
+	}
+	70% {
+		left: -200%;
+	}
+	75%{
+		left: -300%;
+	}
+	95%{
+		left: -300%; 
+	}
+
 }
 
 
